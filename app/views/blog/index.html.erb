@@ -1,0 +1,11 @@
+<h1> Meaning in Memes </h1>
+
+<ul> 
+    <% @blogs.each do |blog| %>
+        <li><%= link_to blog.title, blog_path(blog) %></li>  
+    <% end %>
+    <% @new.each do |blog| %>
+        <p><%= link_to blog.new, new_path(new)%></p>
+
+
+</ul>
