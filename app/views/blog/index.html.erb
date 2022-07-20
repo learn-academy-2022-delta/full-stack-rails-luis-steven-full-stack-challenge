@@ -4,8 +4,7 @@
     <% @blogs.each do |blog| %>
         <li><%= link_to blog.title, blog_path(blog) %></li>  
     <% end %>
-    <% @new.each do |blog| %>
-        <p><%= link_to blog.new, new_path(new)%></p>
+        <p><%= link_to 'Add a new Blog', new_blog_path %></p>
 
 
 </ul>
