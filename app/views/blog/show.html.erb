@@ -3,4 +3,11 @@
 <p> Entry: <%= @blog.title %> </p>
 <p> Content: <%= @blog.content %> </p>
 
-<p> <%= link_to 'Back to Blog Posts', blogs_path %> </p>
+<br/>
+<p><%= button_to 'Delete Blog', delete_blog_path, method: :delete %></p>
+
+<br/>
+
+<p><%= link_to 'Update Blog', edit_blog_path(@blog) %></p>
+
+<p><%= link_to 'Back to Blog Posts', blogs_path %></p>
